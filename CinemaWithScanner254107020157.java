@@ -35,6 +35,18 @@ public class CinemaWithScanner254107020157 { // replace 123456 with your student
             }
         }
 
+        // Display the stored data
+        System.out.println("\n=== Audience List ===");
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 2; j++) {
+                if (audience[i][j] != null) {
+                    System.out.print(audience[i][j] + "\t");
+                } else {
+                    System.out.print("[Empty]\t");
+                }
+            }
+        }
+
         sc.close();
     }
 }
