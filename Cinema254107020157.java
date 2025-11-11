@@ -1,4 +1,4 @@
-public class Cinema254107020157 { // Step 2: Class name same as file name
+public class Cinema254107020157 {
     public static void main(String[] args) {
 
         // Step 3: Create a 2D array for audience (4 rows, 2 columns)
@@ -14,10 +14,19 @@ public class Cinema254107020157 { // Step 2: Class name same as file name
         audience[3][0] = "Gisel";
         audience[3][1] = "Hana";
 
-        // Step 5: Display all array contents
-        System.out.println(audience.length);
-        for (int i = 0; i < audience.length; i++) {
-            System.out.println("Length of row " + i + ": " + audience[i].length);
+        // Step 5: Display total rows and length of each row using foreach
+        System.out.println("Total rows: " + audience.length);
+
+        int rowNumber = 0;
+        for (String[] row : audience) {
+            System.out.println("Length of row " + rowNumber + ": " + row.length);
+            rowNumber++;
+        }
+
+        // Step 6: Display the audience names in the 3rd row (index 2)
+        System.out.println("\nAudiences in row 3:");
+        for (int i = 0; i < audience[2].length; i++) {
+            System.out.println(audience[2][i]);
         }
     }
 }
