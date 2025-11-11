@@ -23,10 +23,10 @@ public class Cinema254107020157 {
             rowNumber++;
         }
 
-        // Step 6: Display the audience names in the 3rd row (index 2)
-        System.out.println("\nAudiences in row 3:");
-        for (int i = 0; i < audience[2].length; i++) {
-            System.out.println(audience[2][i]);
+        // Step 6: Display the audience names in the 3rd row (index 2) using foreach
+        System.out.println("\nAudiences in the row 3:");
+        for (String i : audience[2]) {
+            System.out.println(i);
         }
     }
 }
